@@ -55,19 +55,39 @@ p::after {
   font-family: "simpsons-font";
   src: url(../../fonts/Simpsonfont.ttf) format("truetype"); }
 
+.card__new {
+  position: absolute;
+  top: 1.5rem;
+  left: 5rem; }
+  .card__new--button {
+    font-size: 2.5rem;
+    font-family: "simpsons-font";
+    background-color: #FFD90F;
+    padding: 1rem;
+    border-radius: 2.5rem;
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+    transition: all .15s;
+    outline: none; }
+    .card__new--button:hover {
+      transform: translateY(-0.3rem);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+    .card__new--button:active {
+      transform: translateY(0);
+      box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5); }
+
 blockquote {
   margin: 1rem 0; }
 
 blockquote p {
   margin: 0;
-  font-size: 2rem; }
+  font-size: 2.5rem; }
 
 .card__quote--text {
   position: relative;
-  font-family: "simpsons-font";
   padding: 5rem 3rem;
   margin: 1em auto 6rem;
   border: 0.7rem solid #0a0a0a;
+  font-family: 'Indie Flower', cursive;
   text-align: center;
   color: #0a0a0a;
   background: white;
@@ -149,7 +169,7 @@ blockquote p {
 
 .header__heading {
   font-size: 9rem;
-  padding: 10rem 0;
+  padding: 5rem 0 10rem 0;
   font-family: "simpsons-font";
   color: #FFD90F;
   text-align: center;
@@ -178,25 +198,6 @@ body {
   border-radius: 5rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   animation: delay 4s; }
-  .card__new {
-    position: absolute;
-    top: 1.5rem;
-    left: 5rem; }
-    .card__new--button {
-      font-size: 2.5rem;
-      font-family: "simpsons-font";
-      background-color: #FFD90F;
-      padding: 1rem;
-      border-radius: 2.5rem;
-      box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
-      transition: all .15s;
-      outline: none; }
-      .card__new--button:hover {
-        transform: translateY(-0.3rem);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
-      .card__new--button:active {
-        transform: translateY(0);
-        box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5); }
   .card__name {
     position: absolute;
     left: 2.5rem;

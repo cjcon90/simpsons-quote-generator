@@ -21,33 +21,6 @@ body {
     box-shadow: 0 1rem 2rem rgba(black, 0.5);
     animation: delay 4s;
 
-    &__new {
-        position: absolute;
-        top: 1.5rem;
-        left: 5rem;
-
-        &--button {
-            font-size: 2.5rem;
-            font-family: "simpsons-font";
-            background-color: $color-main;
-            padding: 1rem;
-            border-radius: 2.5rem;
-            box-shadow: 0 0.1rem .2rem rgba(black, 0.5);
-            transition: all .15s;
-            outline: none;
-
-            &:hover {
-                transform: translateY(-.3rem);
-                box-shadow: 0 0.5rem 1rem rgba(black, 0.5);
-            }
-
-            &:active {
-
-                transform: translateY(0);
-                box-shadow: 0 0.1rem .2rem rgba(black, 0.5);
-            }
-        }
-    }
 
     &__name {
         position: absolute;

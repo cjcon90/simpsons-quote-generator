@@ -4,7 +4,7 @@ blockquote {
 
 blockquote p {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 
@@ -12,10 +12,10 @@ blockquote p {
 
 .card__quote--text {
     position: relative;
-    font-family: "simpsons-font";
     padding: 5rem 3rem;
     margin: 1em auto 6rem;
     border: .7rem solid $color-black;
+    font-family: 'Indie Flower', cursive;
     text-align: center;
     color: $color-black;
     background: white;
