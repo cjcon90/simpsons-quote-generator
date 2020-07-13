@@ -1,0 +1,79 @@
+body {
+    background-image: url(../images/clouds.jpg);
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card {
+    position: relative;
+    margin: auto;
+    width: 60rem;
+    height: 40rem;
+    background-color: white;
+    border: .7rem solid $color-black;
+    border-radius: 5rem;
+    box-shadow: 0 1rem 2rem rgba(black, 0.5);
+    animation: delay 4s;
+
+    &__new {
+        position: absolute;
+        top: 1.5rem;
+        left: 5rem;
+
+        &--button {
+            font-size: 2.5rem;
+            font-family: "simpsons-font";
+            background-color: $color-main;
+            padding: 1rem;
+            border-radius: 2.5rem;
+            box-shadow: 0 0.1rem .2rem rgba(black, 0.5);
+            transition: all .15s;
+            outline: none;
+
+            &:hover {
+                transform: translateY(-.3rem);
+                box-shadow: 0 0.5rem 1rem rgba(black, 0.5);
+            }
+
+            &:active {
+
+                transform: translateY(0);
+                box-shadow: 0 0.1rem .2rem rgba(black, 0.5);
+            }
+        }
+    }
+
+    &__name {
+        position: absolute;
+        left: 2.5rem;
+        top: 10rem;
+        width: 50%;
+        font-family: "simpsons-font";
+        font-size: 5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    &__quote {
+        position: absolute;
+        left: 65%;
+        bottom: 75%;
+        width: 40rem;
+    }
+
+    &__character {
+        position: absolute;
+        bottom: 1rem;
+        right: 2rem;
+
+        &--image {
+            height: 37.5rem;
+        }
+    }
+}

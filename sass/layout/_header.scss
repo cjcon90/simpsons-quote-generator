@@ -1,0 +1,15 @@
+.header {
+
+    &__heading {
+        font-size: 9rem;
+        padding: 10rem 0;
+        font-family: "simpsons-font";
+        color: $color-main;
+        text-align: center;
+        text-shadow: 0 0.1rem 1rem $color-black;
+        animation: animTitle 3.5s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+
+    }
+}

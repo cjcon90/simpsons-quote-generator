@@ -1,0 +1,219 @@
+@keyframes animTitle {
+  0% {
+    opacity: 0;
+    font-size: 0.5rem;
+    transform: translateY(-3rem); }
+  100% {
+    opacity: 1;
+    font-size: 9rem;
+    transform: translateY(0); } }
+
+@keyframes delay {
+  0% {
+    opacity: 0; }
+  70% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+ol,
+ul {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+p::before,
+p::after {
+  content: none; }
+
+@font-face {
+  font-family: "simpsons-font";
+  src: url(../../fonts/Simpsonfont.ttf) format("truetype"); }
+
+blockquote {
+  margin: 1rem 0; }
+
+blockquote p {
+  margin: 0;
+  font-size: 2rem; }
+
+.card__quote--text {
+  position: relative;
+  font-family: "simpsons-font";
+  padding: 5rem 3rem;
+  margin: 1em auto 6rem;
+  border: 0.7rem solid #0a0a0a;
+  text-align: center;
+  color: #0a0a0a;
+  background: white;
+  -webkit-border-top-left-radius: 20rem 10rem;
+  -webkit-border-top-right-radius: 20rem 10rem;
+  -webkit-border-bottom-right-radius: 20rem 10rem;
+  -webkit-border-bottom-left-radius: 20rem 10rem;
+  -moz-border-radius: 24rem / 14rem;
+  border-radius: 24rem / 14rem; }
+
+/* creates larger curve */
+.card__quote--text:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: -3.5rem;
+  right: 50%;
+  width: 5rem;
+  height: 3rem;
+  border-style: solid;
+  border-width: 0 .7rem .7rem 0;
+  border-color: #0a0a0a;
+  margin-right: -.7rem;
+  background: transparent;
+  /* css3 */
+  -webkit-border-bottom-right-radius: 8rem 5rem;
+  -moz-border-radius-bottomright: 8rem 5rem;
+  border-bottom-right-radius: 8rem 5rem;
+  /* reduce the damage in FF3.0 */
+  display: block; }
+
+/* creates smaller curve */
+.card__quote--text:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: -3.2rem;
+  right: 52.5%;
+  width: 2rem;
+  height: 3.1rem;
+  border-style: solid;
+  border-width: 0 .7rem .7rem 0;
+  border-color: #0a0a0a;
+  margin-right: 2rem;
+  background: transparent;
+  /* css3 */
+  -webkit-border-bottom-right-radius: 4rem 5rem;
+  -moz-border-radius-bottomright: 4rem 5rem;
+  border-bottom-right-radius: 4rem 5rem;
+  /* reduce the damage in FF3.0 */
+  display: block; }
+
+/* creates a small circle to produce a rounded point where the two curves meet */
+.card__quote--text > :first-child:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: -3.5rem;
+  right: 49.25%;
+  width: .7rem;
+  height: .7rem;
+  margin-right: 4.5rem;
+  background: #0a0a0a;
+  /* css3 */
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  border-radius: 5rem; }
+
+/* creates a white rectangle to cover part of the oval border*/
+.card__quote--text > :first-child:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: -.7rem;
+  right: 50%;
+  width: 3rem;
+  height: 1.5rem;
+  background: #fff; }
+
+.header__heading {
+  font-size: 9rem;
+  padding: 10rem 0;
+  font-family: "simpsons-font";
+  color: #FFD90F;
+  text-align: center;
+  text-shadow: 0 0.1rem 1rem #0a0a0a;
+  animation: animTitle 3.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+body {
+  background-image: url(../images/clouds.jpg);
+  background-size: cover; }
+
+.container {
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.card {
+  position: relative;
+  margin: auto;
+  width: 60rem;
+  height: 40rem;
+  background-color: white;
+  border: 0.7rem solid #0a0a0a;
+  border-radius: 5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  animation: delay 4s; }
+  .card__new {
+    position: absolute;
+    top: 1.5rem;
+    left: 5rem; }
+    .card__new--button {
+      font-size: 2.5rem;
+      font-family: "simpsons-font";
+      background-color: #FFD90F;
+      padding: 1rem;
+      border-radius: 2.5rem;
+      box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+      transition: all .15s;
+      outline: none; }
+      .card__new--button:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+      .card__new--button:active {
+        transform: translateY(0);
+        box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5); }
+  .card__name {
+    position: absolute;
+    left: 2.5rem;
+    top: 10rem;
+    width: 50%;
+    font-family: "simpsons-font";
+    font-size: 5rem;
+    text-align: center;
+    align-items: center; }
+  .card__quote {
+    position: absolute;
+    left: 65%;
+    bottom: 75%;
+    width: 40rem; }
+  .card__character {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem; }
+    .card__character--image {
+      height: 37.5rem; }

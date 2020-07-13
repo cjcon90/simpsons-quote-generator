@@ -1,0 +1,101 @@
+blockquote {
+    margin: 1rem 0;
+}
+
+blockquote p {
+    margin: 0;
+    font-size: 2rem;
+}
+
+
+// speech bubble code courtesy of Michael Chernin: https://codepen.io/mchernin34/pen/ojXvLq
+
+.card__quote--text {
+    position: relative;
+    font-family: "simpsons-font";
+    padding: 5rem 3rem;
+    margin: 1em auto 6rem;
+    border: .7rem solid $color-black;
+    text-align: center;
+    color: $color-black;
+    background: white;
+    -webkit-border-top-left-radius: 20rem 10rem;
+    -webkit-border-top-right-radius: 20rem 10rem;
+    -webkit-border-bottom-right-radius: 20rem 10rem;
+    -webkit-border-bottom-left-radius: 20rem 10rem;
+    -moz-border-radius: 24rem / 14rem;
+    border-radius: 24rem / 14rem;
+}
+
+/* creates larger curve */
+.card__quote--text:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: -3.5rem;
+    right: 50%;
+    width: 5rem;
+    height: 3rem;
+    border-style: solid;
+    border-width: 0 .7rem .7rem 0;
+    border-color: $color-black;
+    margin-right: -.7rem;
+    background: transparent;
+    /* css3 */
+    -webkit-border-bottom-right-radius: 8rem 5rem;
+    -moz-border-radius-bottomright: 8rem 5rem;
+    border-bottom-right-radius: 8rem 5rem;
+    /* reduce the damage in FF3.0 */
+    display: block;
+}
+
+/* creates smaller curve */
+.card__quote--text:after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: -3.2rem;
+    right: 52.5%;
+    width: 2rem;
+    height: 3.1rem;
+    border-style: solid;
+    border-width: 0 .7rem .7rem 0;
+    border-color: $color-black;
+    margin-right: 2rem;
+    background: transparent;
+    /* css3 */
+    -webkit-border-bottom-right-radius: 4rem 5rem;
+    -moz-border-radius-bottomright: 4rem 5rem;
+    border-bottom-right-radius: 4rem 5rem;
+    /* reduce the damage in FF3.0 */
+    display: block;
+}
+
+/* creates a small circle to produce a rounded point where the two curves meet */
+.card__quote--text> :first-child:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -3.5rem;
+    right: 49.25%;
+    width: .7rem;
+    height: .7rem;
+    margin-right: 4.5rem;
+    background: $color-black;
+    /* css3 */
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    border-radius: 5rem;
+}
+
+/* creates a white rectangle to cover part of the oval border*/
+.card__quote--text> :first-child:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -.7rem;
+    right: 50%;
+    width: 3rem;
+    height: 1.5rem;
+    background: #fff;
+}

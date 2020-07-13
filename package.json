@@ -1,0 +1,21 @@
+{
+  "name": "simpsons-quotes",
+  "version": "1.0.0",
+  "description": "A random simpsons quotes generator. API created and coded by Jason Luboff https://jluboff-portfolio.glitch.me/",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles/style.css -w"
+  },
+  "keywords": [
+    "simpsons",
+    "API",
+    "quotes",
+    "random",
+    "javascript"
+  ],
+  "author": "Ciaran Concannon",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
