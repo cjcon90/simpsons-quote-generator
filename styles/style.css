@@ -53,7 +53,7 @@ p::after {
 
 @font-face {
   font-family: "simpsons-font";
-  src: url(../../fonts/Simpsonfont.ttf) format("truetype"); }
+  src: url(../fonts/Simpsonfont.ttf) format("truetype"); }
 
 .card__new {
   position: absolute;
